@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" rel="stylesheet">
+*,body {
+    margin: 0;
+    padding: 0;
+    background-color: #A9A9A9;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 100px;
+}
+
+div {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 30px;
+}
+
+button {
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size: 20px;
+    background: mediumvioletred;
+    padding: 10px 20px 10px 20px;
+}
+    </style>
+    <title>Hary August</title>
+</head>
+<body>
+   <div align="center">
+    <h2>Powered by <strike>Android</strike> HaryAugust as Bhulls ^_^ <br> This's Simple Magic Trick, </h2>
+    </div>
+    <div>
+        <p><br>!!! ALERT !!! <br> "Before we begin,<br> choose a whole number between 0 up to 31."</p>
+    </div>
+    <div id="result"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+    <div id="result4"></div>
+    <div id="result5"></div>
+    <div id="result6"></div><br>
+    <div align="center"><img id="myImg" src="https://pbs.twimg.com/profile_images/931862435488718848/QDsMI4sI.jpg" width="250px" height="250px" alt="No Image Available"></div>
+
+    <br>
+    <div>
+        <button id="okay" onclick="Direction('okay')">OKAY</button>
+    </div>
+    <!-- the first buttons run the function Direction() when clicked -->
+    <div>
+        <button id="yes" style="display: none" onclick="Direction2('yes')">YES</button>
+        <button id="no" style="display: none" onclick="Direction2('no')">NO</button>
+    </div>
+<br>
+    <div>
+        <button id="yes2" style="display: none" onclick="Direction3('yes2')">YES</button>
+        <button id="no2" style="display: none" onclick="Direction3('no2')">NO</button>
+    </div>
+<br>
+    <div>
+        <button id="yes3" style="display: none" onclick="Direction4('yes3')">YES</button>
+        <button id="no3" style="display: none" onclick="Direction4('no3')">NO</button>
+    </div>
+<br>
+    <div>
+        <button id="yes4" style="display: none" onclick="Direction5('yes4')">YES</button>
+        <button id="no4" style="display: none" onclick="Direction5('no4')">NO</button>
+    </div>
+<br>
+    <div>
+        <button id="yes5" style="display: none" onclick="Direction6('yes5')">YES</button>
+        <button id="no5" style="display: none" onclick="Direction6('no5')">NO</button>
+    </div>
+<br>
+
+<script type="text/javascript">
+    alert("This's Game Magic Trick");
+
+var kj = 0;
+
+function Direction(Choice) {
+    // The choice of the first buttons 
+    if (Choice == "okay") {
+        document.getElementById("result").innerHTML = "<center><br>~~~~~~~~~~~~<br><br>Do you see your number below? <br><br><pre>17  25  30  22<br><br>23  31  16  29<br><br>19  27  20  24<br><br>26  21  28  18</pre>";
+        document.getElementById('okay').style.display = 'none';
+        document.getElementById("result").style.display = 'inline';
+        document.getElementById('yes').style.display = 'inline';
+        document.getElementById("no").style.display = 'inline';
+    }
+}
+
+function Direction2(Choice) {
+
+    if (Choice == 'yes') { kj += 16; }
+    document.getElementById("result2").innerHTML = "<center><br>~~~~~~~~~~~~<br><br>How about here? <br><br><pre> 7   2  10  15<br><br>23  18  31  26<br><br> 3  27  11  19<br><br> 6  30  14  22</pre>";
+    document.getElementById('yes').style.display = 'none';
+    document.getElementById("no").style.display = 'none';
+    document.getElementById("result2").style.display = 'inline';
+    document.getElementById('yes2').style.display = 'inline';
+    document.getElementById('no2').style.display = 'inline';
+}
+
+function Direction3(Choice) {
+    if (Choice == 'yes2') { kj += 2; }
+    document.getElementById("result3").innerHTML = "<center><br>~~~~~~~~~~~~<br><br>I need to be sure. Do you see it here? <br><br><pre>24  12   8  28<br><br> 9  30  10  29<br><br>25  15  13  27<br><br>31  26  11  14</pre>";
+    document.getElementById('yes2').style.display = 'none';
+    document.getElementById("no2").style.display = 'none';
+    document.getElementById("result3").style.display = 'inline';
+    document.getElementById('yes3').style.display = 'inline';
+    document.getElementById('no3').style.display = 'inline';
+
+}
+
+function Direction4(Choice) {
+    if (Choice == 'yes3') { kj += 8; }
+    document.getElementById("result4").innerHTML = "<center><br>~~~~~~~~~~~~<br><br>We're almost done. Is your number here? <br><br><pre>31   1   7  25<br><br>23   9  15  17<br><br>29   3  11  27<br><br>21   5  13  19</pre>";
+    document.getElementById('yes3').style.display = 'none';
+    document.getElementById("no3").style.display = 'none';
+    document.getElementById("result4").style.display = 'inline';
+    document.getElementById('yes4').style.display = 'inline';
+    document.getElementById('no4').style.display = 'inline';
+
+}
+
+function Direction5(Choice) {
+    if (Choice == 'yes4') { kj += 1; }
+    document.getElementById("result5").innerHTML = "<center><br>~~~~~~~~~~~~<br><br>Finally, do you see your number below? <br><br><pre>20  28  12   4<br><br> 5  31  21  29<br><br>13   6  22  30<br><br> 7  14  23  15</pre><br>";
+    document.getElementById('yes4').style.display = 'none';
+    document.getElementById("no4").style.display = 'none';
+    document.getElementById("result5").style.display = 'inline';
+    document.getElementById('yes5').style.display = 'inline';
+    document.getElementById('no5').style.display = 'inline';
+
+}
+
+function Direction6(Choice) {
+    if (Choice == 'yes5') { kj += 4; }
+    document.getElementById("result6").innerHTML = "<center>~~~~~~~~~~~~<br><br><h4>Your number is " + kj + "</h4><br>";
+    document.getElementById('yes5').style.display = 'none';
+    document.getElementById("no5").style.display = 'none';
+    document.getElementById("result6").style.display = 'inline';
+}
+</script>
+</body>
+
+</html>
